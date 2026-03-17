@@ -1,0 +1,5 @@
+{
+  "name": "Agentic Skill Studio",
+  "description": "An AI workspace to draft skills, generate use cases, process documents with OCR, and execute agentic tasks with various Gemini models and painter themes.",
+  "requestFramePermissions": []
+}

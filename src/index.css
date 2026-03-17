@@ -1,0 +1,241 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+}
+
+:root {
+  /* Default Light */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --accent: #3b82f6;
+  --border: #e5e7eb;
+}
+
+.dark {
+  /* Default Dark */
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --accent: #60a5fa;
+  --border: #374151;
+}
+
+/* Van Gogh (Starry Night) */
+[data-theme="van-gogh"] {
+  --bg-primary: #0f1c3f;
+  --bg-secondary: #1a2b5e;
+  --text-primary: #fcd34d;
+  --text-secondary: #93c5fd;
+  --accent: #f59e0b;
+  --border: #1e3a8a;
+}
+
+/* Monet (Water Lilies) */
+[data-theme="monet"] {
+  --bg-primary: #e0f2fe;
+  --bg-secondary: #dcfce7;
+  --text-primary: #064e3b;
+  --text-secondary: #0f766e;
+  --accent: #ec4899;
+  --border: #bbf7d0;
+}
+.dark[data-theme="monet"] {
+  --bg-primary: #064e3b;
+  --bg-secondary: #0f766e;
+  --text-primary: #e0f2fe;
+  --text-secondary: #dcfce7;
+  --accent: #fbcfe8;
+  --border: #047857;
+}
+
+/* Picasso (Cubism) */
+[data-theme="picasso"] {
+  --bg-primary: #fef3c7;
+  --bg-secondary: #fde68a;
+  --text-primary: #78350f;
+  --text-secondary: #92400e;
+  --accent: #b45309;
+  --border: #fcd34d;
+}
+.dark[data-theme="picasso"] {
+  --bg-primary: #451a03;
+  --bg-secondary: #78350f;
+  --text-primary: #fef3c7;
+  --text-secondary: #fde68a;
+  --accent: #fbbf24;
+  --border: #92400e;
+}
+
+/* Dali (Surrealism) */
+[data-theme="dali"] {
+  --bg-primary: #ffedd5;
+  --bg-secondary: #fed7aa;
+  --text-primary: #431407;
+  --text-secondary: #7c2d12;
+  --accent: #ea580c;
+  --border: #fdba74;
+}
+.dark[data-theme="dali"] {
+  --bg-primary: #431407;
+  --bg-secondary: #7c2d12;
+  --text-primary: #ffedd5;
+  --text-secondary: #fed7aa;
+  --accent: #f97316;
+  --border: #9a3412;
+}
+
+/* Da Vinci (Renaissance) */
+[data-theme="da-vinci"] {
+  --bg-primary: #f5f5dc;
+  --bg-secondary: #eaddcf;
+  --text-primary: #3e2723;
+  --text-secondary: #5d4037;
+  --accent: #8d6e63;
+  --border: #d7ccc8;
+}
+.dark[data-theme="da-vinci"] {
+  --bg-primary: #3e2723;
+  --bg-secondary: #4e342e;
+  --text-primary: #f5f5dc;
+  --text-secondary: #eaddcf;
+  --accent: #a1887f;
+  --border: #5d4037;
+}
+
+/* Munch (The Scream) */
+[data-theme="munch"] {
+  --bg-primary: #fee2e2;
+  --bg-secondary: #fecaca;
+  --text-primary: #7f1d1d;
+  --text-secondary: #991b1b;
+  --accent: #dc2626;
+  --border: #fca5a5;
+}
+.dark[data-theme="munch"] {
+  --bg-primary: #450a0a;
+  --bg-secondary: #7f1d1d;
+  --text-primary: #fee2e2;
+  --text-secondary: #fecaca;
+  --accent: #ef4444;
+  --border: #991b1b;
+}
+
+/* Klimt (The Kiss) */
+[data-theme="klimt"] {
+  --bg-primary: #fef08a;
+  --bg-secondary: #fde047;
+  --text-primary: #422006;
+  --text-secondary: #713f12;
+  --accent: #ca8a04;
+  --border: #facc15;
+}
+.dark[data-theme="klimt"] {
+  --bg-primary: #422006;
+  --bg-secondary: #713f12;
+  --text-primary: #fef08a;
+  --text-secondary: #fde047;
+  --accent: #eab308;
+  --border: #854d0e;
+}
+
+/* Hokusai (The Great Wave) */
+[data-theme="hokusai"] {
+  --bg-primary: #e0e7ff;
+  --bg-secondary: #c7d2fe;
+  --text-primary: #1e3a8a;
+  --text-secondary: #3730a3;
+  --accent: #4f46e5;
+  --border: #a5b4fc;
+}
+.dark[data-theme="hokusai"] {
+  --bg-primary: #1e3a8a;
+  --bg-secondary: #312e81;
+  --text-primary: #e0e7ff;
+  --text-secondary: #c7d2fe;
+  --accent: #818cf8;
+  --border: #3730a3;
+}
+
+/* Mondrian (De Stijl) */
+[data-theme="mondrian"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --accent: #ef4444; /* Red */
+  --border: #000000;
+}
+.dark[data-theme="mondrian"] {
+  --bg-primary: #000000;
+  --bg-secondary: #111111;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --accent: #3b82f6; /* Blue */
+  --border: #ffffff;
+}
+
+/* O'Keeffe (Desert flowers) */
+[data-theme="okeeffe"] {
+  --bg-primary: #fce7f3;
+  --bg-secondary: #fbcfe8;
+  --text-primary: #831843;
+  --text-secondary: #9d174d;
+  --accent: #db2777;
+  --border: #f9a8d4;
+}
+.dark[data-theme="okeeffe"] {
+  --bg-primary: #4a044e;
+  --bg-secondary: #701a75;
+  --text-primary: #fce7f3;
+  --text-secondary: #fbcfe8;
+  --accent: #f472b6;
+  --border: #831843;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.markdown-body {
+  color: var(--text-primary);
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+.markdown-body p {
+  margin-bottom: 1em;
+  color: var(--text-secondary);
+}
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+  color: var(--text-secondary);
+}
+.markdown-body pre {
+  background-color: var(--bg-secondary);
+  padding: 1em;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1em;
+}
+.markdown-body code {
+  background-color: var(--bg-secondary);
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-family: monospace;
+}
